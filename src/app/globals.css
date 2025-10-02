@@ -1,0 +1,172 @@
+:root {
+  /* Professional dark theme palette */
+  --background: #0a0e13;
+  --surface: #111827;
+  --surface-2: #1f2937;
+  --surface-3: #374151;
+  --foreground: #f9fafb;
+  --foreground-secondary: #e5e7eb;
+  --muted: #9ca3af;
+  --muted-light: #d1d5db;
+
+  /* Brand colors */
+  --primary: #3b82f6; /* Professional blue */
+  --primary-hover: #2563eb;
+  --primary-light: #93c5fd;
+
+  /* Accent colors */
+  --accent: #f59e0b; /* Amber for highlights */
+  --accent-hover: #d97706;
+
+  /* Status colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+
+  /* Borders and dividers */
+  --border: #374151;
+  --border-light: #4b5563;
+  --border-dark: #1f2937;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Professional color utilities */
+.bg-surface {
+  background-color: var(--surface) !important;
+}
+.bg-surface-2 {
+  background-color: var(--surface-2) !important;
+}
+.bg-surface-3 {
+  background-color: var(--surface-3) !important;
+}
+.text-muted {
+  color: var(--muted) !important;
+}
+.text-muted-light {
+  color: var(--muted-light) !important;
+}
+.border-soft {
+  border-color: var(--border) !important;
+}
+.border-light {
+  border-color: var(--border-light) !important;
+}
+
+/* Enhanced cards */
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+}
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+.card .card-title {
+  font-weight: 600;
+}
+
+/* Professional inputs */
+.form-control,
+.form-select {
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  transition: all 0.2s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--surface-3);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+/* Professional buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-warning {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.btn-warning:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+/* Navigation enhancements */
+.navbar {
+  background-color: #212529 !important;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Pagination styling */
+.pagination .page-link {
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--foreground-secondary);
+}
+.pagination .page-link:hover {
+  background-color: var(--surface-3);
+  border-color: var(--border-light);
+  color: var(--foreground);
+}
+.pagination .page-item.active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  color: #d1d5db !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
