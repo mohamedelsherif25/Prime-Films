@@ -1,4 +1,4 @@
-# 🎬 Films Review
+# 🎬 Prime Films
 
 <div align="center">
 
@@ -354,18 +354,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 📞 Support
-
-- **📧 Email**: support@films-review.com
-- **💬 Discord**: [Join our community](https://discord.gg/films-review)
-- **🐦 Twitter**: [@FilmsReview](https://twitter.com/filmsreview)
-- **📖 Documentation**: [docs.films-review.com](https://docs.films-review.com)
-
----
-
 <div align="center">
 
-**Made with ❤️ by the Films Review Team**
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/films-review?style=social)](https://github.com/yourusername/films-review/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/films-review?style=social)](https://github.com/yourusername/films-review/network)
